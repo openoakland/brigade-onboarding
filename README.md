@@ -30,6 +30,9 @@ Read on to learn about what is included here, and how to get set up!
 1. **Configure** both your Onboarding Form and Follow-Up Survey to output responses into the same spreadsheet.
 
     ![Screencap of setting destination](https://github.com/openoakland/brigade-onboarding/blob/master/images/screenshot-response-destination.gif?raw=true)
+
+    Here is what it should look like in the corresponding sheet:
+
     ![Combined spreadsheets](https://github.com/openoakland/brigade-onboarding/blob/master/images/screenshot-combined-tabs.png?raw=true)
 
 1. Open the **Tools > Script Editor** for the combined spreadsheet.
