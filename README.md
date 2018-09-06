@@ -1,7 +1,7 @@
 # Brigade Onboarding Form v1.0
 This is a customizable New Member Onboarding form we use at Open Oakland to welcome new members to the organization.
 
-![Brigade Onboarding Flowchart](/images/Brigade Onboarding Flowchart.png)
+![Brigade Onboarding Flowchart](https://github.com/openoakland/brigade-onboarding/blob/master/images/Brigade%20Onboarding%20Flowchart.png?raw=true)
 
 ## Features
 1. *Onboarding Survey* - Collect new members' names and emails.
