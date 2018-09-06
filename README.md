@@ -39,7 +39,7 @@ Read on to learn about what is included here, and how to get set up!
 
     ![Script Editor](https://github.com/openoakland/brigade-onboarding/blob/master/images/screenshot-script-editor.png?raw=true)
 
-1. Into the Script Editor, **copy-paste the contents of [Code.gs][code.gs]**.
+1. Into the Script Editor, **copy-paste the contents of [the Code.gs file][code.gs]**.
 
 1. **Customize the variables** at the top of the Code.gs file.
 
