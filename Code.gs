@@ -20,8 +20,10 @@ var SLACK_TOKEN = 'xoxp-xxxxxxxx-xxxxxxxx';
 var SLACK_ERROR_USERNAME = '@tdooner';
 // The post-onboarding followup survey:
 var SURVEY_LINK_URL = 'https://www.openoakland.org/hack-night-survey';
-// The part from the URL of the Spreadsheet
+// The part from the URL of the combined Onboarding/Followup Spreadsheet
 var CONTACT_INFO_SHEET_ID = '1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+// The name of the sheet that collects responses from the onboarding form.
+var CONTACT_INFO_SHEET_NAME = 'Onboarding Responses';
 var EMAIL_SENDER_NAME = 'Tom Dooner';
 var EMAIL_SENDER_SIGNATURE = 'Hack Night Lead';
 var EMAIL_SUBJECT = 'Good to meet you at ' + BRIGADE_NAME;
@@ -125,7 +127,7 @@ function _sendSlackMessage(text) {
 }
 
 function _loadSheetAttendees(afterDate) {
-  var sheet = SpreadsheetApp.openById(CONTACT_INFO_SHEET_ID).getSheetByName("Onboarding Responses");
+  var sheet = SpreadsheetApp.openById(CONTACT_INFO_SHEET_ID).getSheetByName(CONTACT_INFO_SHEET_NAME);
   var data = sheet.getDataRange().getValues();
   var headers = data.shift();
   var surveyHeaderIdx = headers.indexOf("Would you be willing to take a short survey about your experience at " + BRIGADE_NAME + "?");
