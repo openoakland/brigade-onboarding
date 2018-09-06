@@ -23,6 +23,7 @@ var SURVEY_LINK_URL = 'https://www.openoakland.org/hack-night-survey';
 // The part from the URL of the Spreadsheet
 var CONTACT_INFO_SHEET_ID = '1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 var EMAIL_SENDER_NAME = 'Tom Dooner';
+var EMAIL_SENDER_SIGNATURE = 'Hack Night Lead';
 var EMAIL_SUBJECT = 'Good to meet you at ' + BRIGADE_NAME;
 // Use an email that isn't already registered in your Slack:
 var EMAIL_DEBUG_ADDRESS = 'tomdooner+emaildebug@gmail.com';
@@ -51,7 +52,7 @@ function _sendEmail(name, email, wantsSurvey) {
         (isPlainText ? "" : "</a>") + ". Your feedback will help us improve hack night for others.",
       (isPlainText ? SURVEY_LINK_URL : ''),
       "Thanks again for coming to our event and feel free to reply with any questions you might have about " + BRIGADE_NAME + "!",
-      "Best," + br + EMAIL_SENDER_NAME + br + "Hack Night Lead"
+      "Best," + br + EMAIL_SENDER_NAME + br + EMAIL_SENDER_SIGNATURE
     ].filter(function (i) { return i.length > 0 }).join(br + br);
   };
 
